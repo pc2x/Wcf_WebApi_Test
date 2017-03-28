@@ -14,6 +14,9 @@ namespace pc2x.Application.Repositories.EntityFramework
         }
 
         public DbSet<Pais> Paises { get; set; }
+        public DbSet<Estado> Estados { get; set; }
+        public DbSet<Municipio> Municipios { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

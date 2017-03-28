@@ -3,12 +3,12 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace pc2x.Application.Repositories.EntityFramework.EntitiesConfiguration
 {
-    public class PaisConfiguration : EntityTypeConfiguration<Pais>
+    class EstadoConfiguration : EntityTypeConfiguration<Estado>
     {
-        public PaisConfiguration()
+        public EstadoConfiguration()
         {
             //table name
-            Map(m => m.ToTable("Paises"));
+            Map(m => m.ToTable("Estados"));
 
             //add primary key
             HasKey(m => m.Id);
@@ -26,9 +26,9 @@ namespace pc2x.Application.Repositories.EntityFramework.EntitiesConfiguration
                 .HasMaxLength(5)
                 .IsRequired();
 
-            HasMany(m => m.Estados)
-                .WithRequired(m => m.Pais)
-                .HasForeignKey(m => m.PaisId)
+            HasMany(m => m.Municipios)
+                .WithRequired(m => m.Estado)
+                .HasForeignKey(m => m.EstadoId)
                 .WillCascadeOnDelete();
 
             //ignora un campo de mapear a la db

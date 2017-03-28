@@ -49,14 +49,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EntityFramework\ApplicationDbContext.cs" />
+    <Compile Include="EntityFramework\EntitiesConfiguration\EstadoConfiguration.cs" />
+    <Compile Include="EntityFramework\EntitiesConfiguration\MunicipioConfiguracion.cs" />
     <Compile Include="EntityFramework\EntitiesConfiguration\PaisConfiguration.cs" />
+    <Compile Include="EntityFramework\Entities\Estado.cs" />
+    <Compile Include="EntityFramework\Entities\Municipio.cs" />
     <Compile Include="EntityFramework\Entities\Pais.cs" />
     <Compile Include="InicializarDB.cs" />
     <Compile Include="Migrations\201703272157302_createDatabaseAndFirstTable.cs" />
     <Compile Include="Migrations\201703272157302_createDatabaseAndFirstTable.Designer.cs">
       <DependentUpon>201703272157302_createDatabaseAndFirstTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703281636068_Relaciones.cs" />
+    <Compile Include="Migrations\201703281636068_Relaciones.Designer.cs">
+      <DependentUpon>201703281636068_Relaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PaisRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +77,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201703272157302_createDatabaseAndFirstTable.resx">
       <DependentUpon>201703272157302_createDatabaseAndFirstTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703281636068_Relaciones.resx">
+      <DependentUpon>201703281636068_Relaciones.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
