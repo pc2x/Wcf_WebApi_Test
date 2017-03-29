@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace pc2x.Application.Repositories.EntityFramework.EntitiesConfiguration
 {
-    class EstadoConfiguration : EntityTypeConfiguration<Estado>
+    class EstadoConfiguration : EntityTypeConfiguration<EstadoEntity>
     {
         public EstadoConfiguration()
         {

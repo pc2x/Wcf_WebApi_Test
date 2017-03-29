@@ -39,13 +39,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DomainModels\AsentamientoModel.cs" />
+    <Compile Include="DomainModels\CodigoPostalModel.cs" />
+    <Compile Include="DomainModels\EstadoModel.cs" />
+    <Compile Include="DomainModels\MunicipioModel.cs" />
+    <Compile Include="DomainModels\PaisModel.cs" />
+    <Compile Include="DomainModels\TipoAsentamientoModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoriesContracts\IAsentamientoRepository.cs" />
+    <Compile Include="RepositoriesContracts\ICodigoPostalRepository.cs" />
+    <Compile Include="RepositoriesContracts\IEstadoRepository.cs" />
+    <Compile Include="RepositoriesContracts\IGenericRepository.cs" />
+    <Compile Include="RepositoriesContracts\IMunicipioRepository.cs" />
+    <Compile Include="RepositoriesContracts\IPaisRepository.cs" />
+    <Compile Include="RepositoriesContracts\ITipoAsentamientoRepository.cs" />
+    <Compile Include="ServicesContracts\IAsentamientolService.cs" />
+    <Compile Include="ServicesContracts\ICodigoPostalService.cs" />
+    <Compile Include="ServicesContracts\IEstadoService.cs" />
+    <Compile Include="ServicesContracts\IGenericService.cs" />
+    <Compile Include="ServicesContracts\IMunicipioService.cs" />
+    <Compile Include="ServicesContracts\IPaisService.cs" />
+    <Compile Include="ServicesContracts\ITipoAsentamientoService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DomainModels\" />
-    <Folder Include="RepositoriesContracts\" />
-    <Folder Include="ServicesContracts\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -3,7 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace pc2x.Application.Repositories.EntityFramework.EntitiesConfiguration
 {
-    public class PaisConfiguration : EntityTypeConfiguration<Pais>
+    public class PaisConfiguration : EntityTypeConfiguration<PaisEntity>
     {
         public PaisConfiguration()
         {
