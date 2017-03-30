@@ -18,8 +18,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.Tests", "p
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.Services", "pc2x.Application.Services\pc2x.Application.Services.csproj", "{0131A957-307E-45E9-8D88-B382AC0C9C91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.DependencyResolution", "pc2x.Application.DependencyResolver\pc2x.Application.DependencyResolution.csproj", "{21D01B0C-C437-403F-A373-ED6948143A01}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +40,6 @@ Global
 		{0131A957-307E-45E9-8D88-B382AC0C9C91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0131A957-307E-45E9-8D88-B382AC0C9C91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0131A957-307E-45E9-8D88-B382AC0C9C91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21D01B0C-C437-403F-A373-ED6948143A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21D01B0C-C437-403F-A373-ED6948143A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21D01B0C-C437-403F-A373-ED6948143A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21D01B0C-C437-403F-A373-ED6948143A01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
