@@ -20,6 +20,7 @@ namespace pc2x.Application.Repositories.Mappers
         public MappingProfile()
         {
             CreateMap<PaisEntity, PaisModel>();
+            CreateMap<PaisModel, PaisEntity>();
         }
     }
 }

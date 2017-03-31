@@ -17,6 +17,11 @@ namespace pc2x.Application.Repositories.Repositories
         {
             using (var ctx = new TContext())
             {
+                //var mapper = new MapperConfiguration(c =>
+                //    c.CreateMap<TTarget, TSource>());
+
+                //var m = mapper.CreateMapper();
+
                 //mapea a entidad de EF
                 var entity = Mapper.Map<TSource>(model);
 

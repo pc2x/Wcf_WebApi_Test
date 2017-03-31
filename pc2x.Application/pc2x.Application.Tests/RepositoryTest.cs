@@ -3,13 +3,13 @@ using pc2x.Application.Repositories.Mappers;
 using pc2x.Application.Repositories.Repositories;
 using System.Linq;
 
-namespace pc2x.Application.Tests.Repositories
+namespace pc2x.Application.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class RepositoryTest
     {
         [TestMethod]
-        public void ObtenerLista_Paises()
+        public void REPO_ObtenerLista_Paises()
         {
             AutoMapperConfiguration.Configure();
             var repo = new PaisRepository();

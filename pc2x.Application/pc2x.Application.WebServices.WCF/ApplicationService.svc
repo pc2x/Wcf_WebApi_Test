@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="pc2x.Application.WebServices.WCF.ApplicationService" CodeBehind="ApplicationService.svc.cs" Factory="pc2x.Application.WebServices.WCF.WcfServiceFactory" %>
