@@ -30,8 +30,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.WebService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.WebServices.WCF.Library", "pc2x.Application.WebServices.WCF.Library\pc2x.Application.WebServices.WCF.Library.csproj", "{C15B4B6B-3414-4536-A4D8-792147E9E541}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pc2x.Application.WebServices.WCF.Host", "pc2x.Application.WebServices.WCF.Host\pc2x.Application.WebServices.WCF.Host.csproj", "{B24834DC-6D39-44AD-AEDE-9EADC625BADC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,10 +68,6 @@ Global
 		{C15B4B6B-3414-4536-A4D8-792147E9E541}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C15B4B6B-3414-4536-A4D8-792147E9E541}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C15B4B6B-3414-4536-A4D8-792147E9E541}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B24834DC-6D39-44AD-AEDE-9EADC625BADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B24834DC-6D39-44AD-AEDE-9EADC625BADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B24834DC-6D39-44AD-AEDE-9EADC625BADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B24834DC-6D39-44AD-AEDE-9EADC625BADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +80,5 @@ Global
 		{5F20D8F1-1C35-4441-B318-60E7618CB4F0} = {45A82D75-1B8B-417B-B1B0-32D0FD5E4DC9}
 		{7865B2E4-2F4D-4CF1-A4FB-D668FF0208D9} = {45A82D75-1B8B-417B-B1B0-32D0FD5E4DC9}
 		{C15B4B6B-3414-4536-A4D8-792147E9E541} = {45A82D75-1B8B-417B-B1B0-32D0FD5E4DC9}
-		{B24834DC-6D39-44AD-AEDE-9EADC625BADC} = {45A82D75-1B8B-417B-B1B0-32D0FD5E4DC9}
 	EndGlobalSection
 EndGlobal
