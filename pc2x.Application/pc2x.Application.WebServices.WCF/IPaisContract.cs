@@ -16,9 +16,9 @@ namespace pc2x.Application.WebServices.WCF
         IEnumerable<PaisModel> GetAll();
 
         [OperationContract]
-        void Edit(PaisModel model);
+        Task Edit(PaisModel model);
 
         [OperationContract]
-        void Delete(PaisModel model);
+        Task Delete(PaisModel model);
     }
 }

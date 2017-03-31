@@ -1,6 +1,5 @@
 ﻿using pc2x.Application.Core.DomainModels;
 using pc2x.Application.Core.ServicesContracts;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -34,14 +33,14 @@ namespace pc2x.Application.WebServices.WCF
             return _paisService.GetAll();
         }
 
-        public void Edit(PaisModel model)
+        public async Task Edit(PaisModel model)
         {
-            throw new NotImplementedException();
+            await _paisService.Edit(model);
         }
 
-        public void Delete(PaisModel model)
+        public async Task Delete(PaisModel model)
         {
-            throw new NotImplementedException();
+            await _paisService.Delete(model);
         }
     }
 }
