@@ -45,6 +45,7 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -176,12 +177,145 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\plugins\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="Content\plugins\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="Content\plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="Content\plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\plugins\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Content\css\helper.css">
+      <DependentUpon>helper.less</DependentUpon>
+    </Content>
+    <Content Include="Content\css\helper.min.css">
+      <DependentUpon>helper.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\overrides\dataTables.css">
+      <DependentUpon>dataTables.less</DependentUpon>
+    </Content>
+    <Content Include="Content\css\overrides\dataTables.min.css">
+      <DependentUpon>dataTables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\fonts\montserrat\montserrat-bold-webfont.svg" />
+    <Content Include="Content\fonts\montserrat\montserrat-regular-webfont.svg" />
+    <Content Include="Content\fonts\pages-icon\Pages-icon.svg" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.bootstrap.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.bootstrap.min.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.foundation.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.foundation.min.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.jqueryui.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.jqueryui.min.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.semanticui.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\dataTables.semanticui.min.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\jquery.dataTables.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\jquery.dataTables.min.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\css\jquery.dataTables_themeroller.css" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\images\sort_asc.png" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\images\sort_asc_disabled.png" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\images\sort_both.png" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\images\sort_desc.png" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\images\sort_desc_disabled.png" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.bootstrap.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.bootstrap.min.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.foundation.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.foundation.min.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.jqueryui.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.jqueryui.min.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.semanticui.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\dataTables.semanticui.min.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\jquery.dataTables.js" />
+    <Content Include="Content\plugins\dataTables\DataTables-1.10.13\js\jquery.dataTables.min.js" />
+    <Content Include="Content\plugins\dataTables\datatables.css" />
+    <Content Include="Content\plugins\dataTables\datatables.js" />
+    <Content Include="Content\plugins\dataTables\datatables.min.css" />
+    <Content Include="Content\plugins\dataTables\datatables.min.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.bootstrap.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.bootstrap.min.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.dataTables.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.dataTables.min.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.foundation.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.foundation.min.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.jqueryui.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\css\responsive.jqueryui.min.css" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\dataTables.responsive.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\dataTables.responsive.min.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.bootstrap.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.bootstrap.min.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.foundation.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.foundation.min.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.jqueryui.js" />
+    <Content Include="Content\plugins\dataTables\Responsive-2.1.1\js\responsive.jqueryui.min.js" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.bootstrap.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.bootstrap.min.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.dataTables.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.dataTables.min.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.foundation.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.foundation.min.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.jqueryui.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\css\select.jqueryui.min.css" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\js\dataTables.select.js" />
+    <Content Include="Content\plugins\dataTables\Select-1.2.0\js\dataTables.select.min.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\css\overrides\dataTables.less" />
+    <Content Include="Content\css\overrides\dataTables.css.map">
+      <DependentUpon>dataTables.css</DependentUpon>
+    </Content>
+    <Content Include="Content\css\helper.less" />
+    <Content Include="Content\css\helper.css.map">
+      <DependentUpon>helper.css</DependentUpon>
+    </Content>
+    <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\plugins\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\plugins\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\plugins\font-awesome\font\fontawesome-webfont.eot" />
+    <Content Include="Content\plugins\font-awesome\font\fontawesome-webfont.ttf" />
+    <Content Include="Content\plugins\font-awesome\font\fontawesome-webfont.woff" />
+    <Content Include="Content\plugins\font-awesome\font\FontAwesome.otf" />
+    <Content Include="Content\plugins\font-awesome\less\animated.less" />
+    <Content Include="Content\plugins\font-awesome\less\bootstrap.less" />
+    <Content Include="Content\plugins\font-awesome\less\bordered-pulled.less" />
+    <Content Include="Content\plugins\font-awesome\less\core.less" />
+    <Content Include="Content\plugins\font-awesome\less\extras.less" />
+    <Content Include="Content\plugins\font-awesome\less\fixed-width.less" />
+    <Content Include="Content\plugins\font-awesome\less\font-awesome-ie7.less" />
+    <Content Include="Content\plugins\font-awesome\less\font-awesome.less" />
+    <Content Include="Content\plugins\font-awesome\less\icons.less" />
+    <Content Include="Content\plugins\font-awesome\less\larger.less" />
+    <Content Include="Content\plugins\font-awesome\less\list.less" />
+    <Content Include="Content\plugins\font-awesome\less\mixins.less" />
+    <Content Include="Content\plugins\font-awesome\less\path.less" />
+    <Content Include="Content\plugins\font-awesome\less\rotated-flipped.less" />
+    <Content Include="Content\plugins\font-awesome\less\screen-reader.less" />
+    <Content Include="Content\plugins\font-awesome\less\stacked.less" />
+    <Content Include="Content\plugins\font-awesome\less\variables.less" />
+    <Content Include="Content\plugins\font-awesome\scss\font-awesome-ie7.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\font-awesome.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_animated.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_bootstrap.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_core.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_extras.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_icons.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_larger.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_list.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_mixins.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_path.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_stacked.scss" />
+    <Content Include="Content\plugins\font-awesome\scss\_variables.scss" />
+    <Content Include="Content\fonts\montserrat\Montserrat-Bold.ttf" />
+    <Content Include="Content\fonts\montserrat\Montserrat-Regular.ttf" />
+    <Content Include="Content\fonts\pages-icon\Pages-icon.eot" />
+    <Content Include="Content\fonts\pages-icon\Pages-icon.ttf" />
+    <Content Include="Content\fonts\pages-icon\Pages-icon.woff" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

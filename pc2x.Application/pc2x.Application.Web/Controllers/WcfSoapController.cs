@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace pc2x.Application.Web.Controllers
 {
@@ -11,6 +7,8 @@ namespace pc2x.Application.Web.Controllers
         // GET: WcfSoap
         public ActionResult Index()
         {
+
+
             return View();
         }
     }
